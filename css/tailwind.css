@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-principal {
+      @apply bg-pink text-white pt-10px pr-13px pb-9px pl-14px rounded shadow font text-lg font-semibold;
+    }
+    .header {
+        @apply flex justify-between pt-5 pb-5 pr-2 pl-2;
+    }
+}
+
+@font-face {
+    font-family: 'Blinker';
+    src: local('Blinker'), url(./public/fonts/Blinker.ttf) format('ttf');
+  }
