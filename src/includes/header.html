@@ -1,20 +1,23 @@
-<header class="bg-header bg-cover pb-56">
+<header class="bg-header md:bg-desktop bg-cover">
     <div class="header">
-        <img src="media/logo.svg">
-        <button class="btn-principal">Entra gratis</button>
+        <img src="media/logo.svg" class="w-44 md:w-52 lg:w-60 4k:w-80">
+        <button class="btn-principal xl:pr-8 xl:pl-8"><a href=" " class="font-semibold 2xl:text-2xl">Entra gratis</a></button>
     </div>
-    <div class="flex flex-col items-center mt-36 m-2 mb-1">
-        <div class="flex bg-black-c shadow opacity-90 pt-3.5 pr-4 pb-13px pl-2 object-contain w-full">
+    <div class="flex flex-col items-center justify-center m-2 mb-0 h-32rem pb-12 xl:h-50rem xl:pb-60 4k:h-100rem 4k:pb-35rem">
+        <img src="media/symbol-slogan.svg" class="max-md:hidden 4k:w-2/6">
+        <div class="flex bg-black-c shadow opacity-90 pt-3.5 pr-4 pb-13px pl-2 object-contain w-full lg:w-30rem 4k:w-60rem">
             <button type="submit"><img src="media\icon-search.svg" class="mr-2"></button>
-            <input type="text" placeholder="Buscador de puertos de montaña" name="search" class="bg-transparent w-full text-lg">
+            <input type="text" placeholder="Buscador de puertos de montaña" name="search" class="bg-transparent w-full text-lg 4k:text-xl">
         </div>
-        <div class="flex bg-black-c pt-3.5 pr-4 pb-13px pl-2 mt-1 object-contain w-full border-dark-c border-b-2">
+        <div class="flex bg-black-c pt-3.5 pr-4 pb-13px pl-2 mt-1 lg:w-30rem object-contain w-full border-dark-c border-b-2 4k:w-60rem">
             <img src="media/puertos.svg" class="mr-2">
-            <span class="text-white text-lg">Por nombre</span>
+            <span class="text-white text-lg 4k:text-xl lg:hidden">Por nombre</span>
+            <span class="text-white text-lg 4k:text-xl max-md:hidden">Por nombre (va directamente a la altimetría)</span>
         </div>
-        <div class="flex bg-black-c pt-3.5 pr-4 pb-13px pl-2 object-contain w-full">
+        <div class="flex bg-black-c pt-3.5 pr-4 pb-13px pl-2 object-contain w-full lg:w-30rem 4k:w-60rem">
             <img src="media/icon-location.svg" class="mr-2">
-            <span class="text-white text-lg">Por localización</span>
+            <span class="text-white text-lg 4k:text-xl lg:hidden">Por localización</span>
+            <span class="text-white text-lg 4k:text-xl max-md:hidden">Por localización (va a resultados de búsqueda)</span>
         </div>
     </div>
 </header>

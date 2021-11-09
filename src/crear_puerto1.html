@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include("./includes/head.html")
+    </head>
+    <body>
+        @@include("./includes/header_user.html")
+        <main class="p-0 mb-40">
+            <div class="bg-footer flex flex-col items-center p-9 lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc mb-12">
+                <h2 class="text-white lg:text-34px md:text-3xl text-2xl whitespace-nowrap">Crea un puerto, nombre</h2>
+                <img src="media/group.png" class="p-5 w-48">
+                <p class="text-white font-extralight text-center">Empieza poniéndole un nombre a tu altimetría, también puedes añadir una descripción para que tu altimetría sea más fácil de encontrar por la comunidad.</p>
+            </div>
+            <div class="flex flex-col items-stretch lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc">
+                <label for="name" class="text-left text-like uppercase text-sm">Nombre*</label>
+                <input type="text" id="name" name="name" class="mb-7">
+                <label for="description" class="text-left text-like uppercase text-sm">Descripción</label>
+                <textarea id="description" name="description" rows="4" class="mb-20"></textarea>
+                <div class="flex justify-center">
+                    <button type="cancel" class="text-span hover:bg-black font-bold text-lg p-10px pr-13px pl-13px">Cancelar</button>
+                    <button type="submit" class="btn-principal font-bold ml-10">Siguiente</button>
+                </div>
+            </div>
+        </main>
+        @@include("./includes/footer.html")
+    </body>
+</html>
