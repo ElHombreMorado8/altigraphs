@@ -5,9 +5,9 @@
     </head>
     <body>
         @@include("./includes/header_profile.html")
-        <main class="p-0 mb-40">
-            <div class="bg-footer flex flex-col items-center pb-9 mb-12">
-                <div class="flex justify-around w-full p-9 pr-0 pl-0">
+        <main class="p-0">
+            <div class="bg-footer flex flex-col items-center mb-12">
+                <div class="flex justify-around w-full p-9 pr-0 pl-0 max-sm:hidden">
                     <div class="flex flex-col">
                         <div class="flex items-center">
                             <img src="media/no-photo.svg">
@@ -16,15 +16,27 @@
                                 <h3 class="text-like text-2xl">Apellido Apellido</h3>
                             </div>
                         </div>
-                        <div class="flex">
-                            <div class="flex flex-col items-center">
-                                <img src="media/badge-total.png" class="w-16 h-37rem">
+                        <div class="flex items-baseline pl-5">
+                            <div class="flex flex-col items-center pr-2">
+                                <img src="media/badge-total.png" class="w-12 h-12">
                                 <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">24</p>
                             </div>
-                            <img src="media/badge-hc.png" class="w-16 h-37rem">
-                            <img src="media/badge-primera.png" class="w-16 h-37rem">
-                            <img src="media/badge-segunda.png" class="w-16 h-37rem">
-                            <img src="media/badge-tercera.png" class="w-16 h-37rem">
+                            <div class="flex flex-col items-center pr-2">
+                                <img src="media/badge-hc.png" class="w-12 h-12">
+                                <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">3</p>
+                            </div>
+                            <div class="flex flex-col items-center pr-2">
+                                <img src="media/badge-primera.png" class="w-12 h-12">
+                                <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">4</p>
+                            </div>
+                            <div class="flex flex-col items-center pr-2">
+                                <img src="media/badge-segunda.png" class="w-12 h-12">
+                                <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">6</p>
+                            </div>
+                            <div class="flex flex-col items-center pr-2">
+                                <img src="media/badge-tercera.png" class="w-12 h-12">
+                                <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">11</p>
+                            </div>
                         </div>
                     </div>
                     <div class="flex items-start pt-12">
@@ -32,15 +44,295 @@
                         <button class="p-10px pr-6 pl-6 ml-4 rounded text-like border border-grey-border"><a href=" ">Cerrar sesión</a></button>
                     </div>
                 </div>
-                <div class="flex">
-                    <button>Mis puertos</button>
-                    <button>Actividad</button>
-                    <button>Puertos Fav.</button>
+                <!--Mobile-->
+                <div class="flex flex-col p-9 pr-0 pl-0 md:hidden">
+                    <div class="flex justify-between pr-2 pl-2">
+                        <button class="p-10px pr-3 pl-3 rounded text-like bg-black-c"><a href=" ">Editar perfil</a></button>
+                        <button class="p-10px pr-3 pl-3 ml-4 rounded text-like border border-grey-border"><a href=" ">Cerrar sesión</a></button>
+                    </div>
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="media/no-photo.svg">
+                        <h2 class="text-white">Nombre</h2>
+                        <h3 class="text-like text-2xl">Apellido Apellido</h3>
+                    </div>
+                    <div class="flex items-baseline overflow-x-auto pl-5">
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/badge-total.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">24</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/badge-hc.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">3</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/badge-primera.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">4</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/badge-segunda.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">6</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/badge-tercera.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">11</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/puertos-mejor-valorados.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">720</p>
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 items-center pr-2">
+                            <img src="media/puertos-creados.png" class="w-12 h-12">
+                            <p class="bg-white text-sm text-center pr-1 pl-1 -mt-4">11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full justify-evenly flex">
+                    <button class="uppercase text-white text-lg max-sm:text-sm active:text-pink active:border-pink active:border-b-4 pr-24 pl-24 max-sm:pr-4 max-sm:pl-4">Mis puertos</button>
+                    <button class="uppercase text-white text-lg max-sm:text-sm active:text-pink active:border-pink active:border-b-4 pr-24 pl-24 max-sm:pr-4 max-sm:pl-4">Actividad</button>
+                    <button class="uppercase text-white text-lg max-sm:text-sm active:text-pink active:border-pink active:border-b-4 pr-24 pl-24 max-sm:pr-4 max-sm:pl-4">Puertos Fav.</button>
                 </div>
             </div>
-            <div class="flex flex-col items-stretch lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc">
-                
+            
+            <!--Mis puertos-->
+            <!--<div class="grid lg:grid-cols-3 grid-cols-1 lg:pr-64 lg:pl-64 pr-2 pl-2 pb-28">>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <h4 class="uppercase text-pink text-sm font-semibold">Categoría hc</h4>
+                    <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                            <span class="text-black-c text-3xl pr-4 pl-4">|</span>
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z" transform="translate(9.924476, 7.928172) scale(-1, -1) translate(-9.924476, -7.928172) "></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path d="M3.00878799,18.4618995 C1.34708027,18.4618995 1.18847511e-13,17.119294 2.66207432e-13,15.4545873 L1.54638401e-12,0.992591902 C1.59491011e-12,0.444398532 0.34103775,0.295159604 0.752369404,0.651156814 L4,3.46189949 L17.9998738,3.46189949 C19.6567977,3.46189949 21,4.80625023 21,6.46132197 L21,15.462477 C21,17.1190123 19.6544098,18.4618995 17.991212,18.4618995 L3.00878799,18.4618995 Z" transform="translate(10.500000, 9.230950) scale(-1, -1) translate(-10.500000, -9.230950) "></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <h4 class="uppercase text-orange text-sm font-semibold">1ª Categoría</h4>
+                    <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                            <span class="text-black-c text-3xl pr-4 pl-4">|</span>
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z" transform="translate(9.924476, 7.928172) scale(-1, -1) translate(-9.924476, -7.928172) "></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path d="M3.00878799,18.4618995 C1.34708027,18.4618995 1.18847511e-13,17.119294 2.66207432e-13,15.4545873 L1.54638401e-12,0.992591902 C1.59491011e-12,0.444398532 0.34103775,0.295159604 0.752369404,0.651156814 L4,3.46189949 L17.9998738,3.46189949 C19.6567977,3.46189949 21,4.80625023 21,6.46132197 L21,15.462477 C21,17.1190123 19.6544098,18.4618995 17.991212,18.4618995 L3.00878799,18.4618995 Z" transform="translate(10.500000, 9.230950) scale(-1, -1) translate(-10.500000, -9.230950) "></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <h4 class="uppercase text-l-orange text-sm font-semibold">2ª Categoría</h4>
+                    <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                            <span class="text-black-c text-3xl pr-4 pl-4">|</span>
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z" transform="translate(9.924476, 7.928172) scale(-1, -1) translate(-9.924476, -7.928172) "></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path d="M3.00878799,18.4618995 C1.34708027,18.4618995 1.18847511e-13,17.119294 2.66207432e-13,15.4545873 L1.54638401e-12,0.992591902 C1.59491011e-12,0.444398532 0.34103775,0.295159604 0.752369404,0.651156814 L4,3.46189949 L17.9998738,3.46189949 C19.6567977,3.46189949 21,4.80625023 21,6.46132197 L21,15.462477 C21,17.1190123 19.6544098,18.4618995 17.991212,18.4618995 L3.00878799,18.4618995 Z" transform="translate(10.500000, 9.230950) scale(-1, -1) translate(-10.500000, -9.230950) "></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <h4 class="uppercase text-yellow-c text-sm font-semibold">3ª Categoría</h4>
+                    <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                            <span class="text-black-c text-3xl pr-4 pl-4">|</span>
+                            <div class="flex group">
+                                <button>
+                                    <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z" transform="translate(9.924476, 7.928172) scale(-1, -1) translate(-9.924476, -7.928172) "></path>
+                                    </svg>
+                                </button>
+                                <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path d="M3.00878799,18.4618995 C1.34708027,18.4618995 1.18847511e-13,17.119294 2.66207432e-13,15.4545873 L1.54638401e-12,0.992591902 C1.59491011e-12,0.444398532 0.34103775,0.295159604 0.752369404,0.651156814 L4,3.46189949 L17.9998738,3.46189949 C19.6567977,3.46189949 21,4.80625023 21,6.46132197 L21,15.462477 C21,17.1190123 19.6544098,18.4618995 17.991212,18.4618995 L3.00878799,18.4618995 Z" transform="translate(10.500000, 9.230950) scale(-1, -1) translate(-10.500000, -9.230950) "></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Actividad -->
+            <!-- <div class="grid lg:grid-cols-3 grid-cols-1 lg:pr-64 lg:pl-64 pr-2 pl-2 pb-28">>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <span class="text-sm text-like">10/04/21</span>
+                            <h3 class="text-white text-2xl">Nombre actividad</h3>
+                        </div>
+                        <div class="flex">
+                            <img src="media/hide.svg">
+                        </div>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                </div>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <span class="text-sm text-like">10/04/21</span>
+                            <h3 class="text-white text-2xl">Nombre actividad</h3>
+                        </div>
+                        <div class="flex">
+                            <img src="media/hide.svg">
+                        </div>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                </div>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <span class="text-sm text-like">10/04/21</span>
+                            <h3 class="text-white text-2xl">Nombre actividad</h3>
+                        </div>
+                        <div class="flex">
+                            <img src="media/hide.svg">
+                        </div>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                </div>
+            </div> -->
+            
+            <!-- Puertos fav. -->
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:pr-64 lg:pl-64 pr-2 pl-2 pb-28">
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <h4 class="uppercase text-pink text-sm font-semibold">Categoría hc</h4>
+                            <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                        </div>
+                        <button class="group w-16 h-16">
+                            <svg class="relative z-10 w-16 h-16"><path id="Shape" fill="#fff" d="M24,19.69a5.21,5.21,0,0,0-4.75-3.19,4.67,4.67,0,0,0-4.75,4.78c0,3.75,4,6.65,9.5,12.22,5.5-5.57,9.5-8.47,9.5-12.22a4.67,4.67,0,0,0-4.75-4.78A5.21,5.21,0,0,0,24,19.69Z"/></svg>
+                            <svg class="relative -mt-16 w-16 h-16 text-grey-c fill-current transition-colors group-hover:text-like-hover group-hover:fill-current"><circle id="Oval" cx="24" cy="24" r="20"/></svg>
+                        </button>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-light-c ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <h4 class="uppercase text-orange text-sm font-semibold">1ª Categoría</h4>
+                            <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                        </div>
+                        <button class="group w-16 h-16">
+                            <svg class="relative z-10 w-16 h-16"><path id="Shape" fill="#fff" d="M24,19.69a5.21,5.21,0,0,0-4.75-3.19,4.67,4.67,0,0,0-4.75,4.78c0,3.75,4,6.65,9.5,12.22,5.5-5.57,9.5-8.47,9.5-12.22a4.67,4.67,0,0,0-4.75-4.78A5.21,5.21,0,0,0,24,19.69Z"/></svg>
+                            <svg class="relative -mt-16 w-16 h-16 text-grey-c fill-current transition-colors group-hover:text-like-hover group-hover:fill-current"><circle id="Oval" cx="24" cy="24" r="20"/></svg>
+                        </button>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-light-c ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-light-c group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            @@include("./includes/footer.html")
         </main>
     </body>
 </html>

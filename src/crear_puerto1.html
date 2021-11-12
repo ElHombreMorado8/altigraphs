@@ -11,7 +11,7 @@
                 <img src="media/group.png" class="p-5 w-48">
                 <p class="text-white font-extralight text-center">Empieza poniéndole un nombre a tu altimetría, también puedes añadir una descripción para que tu altimetría sea más fácil de encontrar por la comunidad.</p>
             </div>
-            <div class="flex flex-col items-stretch lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc">
+            <form class="flex flex-col items-stretch lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc">
                 <label for="name" class="text-left text-like uppercase text-sm">Nombre*</label>
                 <input type="text" id="name" name="name" class="mb-7">
                 <label for="description" class="text-left text-like uppercase text-sm">Descripción</label>
@@ -20,7 +20,7 @@
                     <button type="cancel" class="text-span hover:bg-black font-bold text-lg p-10px pr-13px pl-13px">Cancelar</button>
                     <button type="submit" class="btn-principal font-bold ml-10">Siguiente</button>
                 </div>
-            </div>
+            </form>
         </main>
         @@include("./includes/footer.html")
     </body>
