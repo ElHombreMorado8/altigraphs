@@ -27,11 +27,13 @@ module.exports = {
       },
       spacing:  {
         '01': '0.1rem',
+        '02': '0.2rem',
         '9px': '0.5625rem',
         '10px': '0.625rem',
         '11px': '0.6875rem',
         '13px': '0.8125rem',
         '14px': '0.875rem',
+        '94rem': '9.4rem',
         '30rem': '30rem',
         '5pc': '5%',
         '10pc': '10%',
@@ -53,6 +55,7 @@ module.exports = {
         '60rem': '60rem',
       },
       height: {
+        '31rem': '3.1rem',
         '37rem': '3.7rem',
         '32rem': '32rem',
         '50rem': '50rem',
@@ -92,6 +95,7 @@ module.exports = {
         header: '0 3px 6px 0 rgba(0, 0, 0, 0.2)',
         input: 'inset 0 0 4px 1px rgba(0, 0, 0, 0.1)',
         select: '0 0 20px 0 rgba(0, 0, 0, 0.2)',
+        card: '0 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.1)',
       },
       fontFamily: {
         'Blinker': ['Blinker', 'sans-serif'],
@@ -103,14 +107,19 @@ module.exports = {
         'sobre-nosotros-desktop': "url('../media/sobre-nosotros-desktop.png')",
         'mid-line': "url('../media/mid-line.png')",
         'line': "url('../media/line.png')",
-      }
+      },
+    },
+    fill: {
+      current: 'currentColor',
     },
   },
   variants: {
     extend: {
       fill: ['hover', 'active'],
-      textColor: ['active'],
+      textColor: ['hover', 'active'],
       divideColor: ['group-hover'],
+      borderWidth: ['active'],
+      borderColor: ['active'],
     },
   },
   plugins: [

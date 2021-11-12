@@ -4,7 +4,7 @@
 
 @layer components {
     .card{
-        @apply lg:m-0 lg:mr-4 lg:ml-4;
+        @apply lg:m-0 lg:mr-4 lg:ml-4 rounded shadow-card;
     }
     .btn-principal {
         @apply bg-pink hover:bg-btn-hover text-white p-10px pr-13px pl-13px rounded shadow text-lg;
