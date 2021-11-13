@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1858CD05-CFC7-4E8B-8E46-91DCB84ACC03</title>
+    <defs>
+        <filter x="-25.0%" y="-12.8%" width="150.0%" height="125.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-_-Resultados-de-busqueda/Buscador-_-Desktop-HD" transform="translate(-1154.000000, -172.000000)" fill="#F8F8F8">
+            <g id="Group-8" filter="url(#filter-1)" transform="translate(1142.000000, 161.000000)">
+                <path d="M24,17 C24.5522847,17 25,17.4477153 25,18 L25,22 L29,22 C29.5522847,22 30,22.4477153 30,23 C30,23.5522847 29.5522847,24 29,24 L25,24 L25,28 C25,28.5522847 24.5522847,29 24,29 C23.4477153,29 23,28.5522847 23,28 L23,24 L19,24 C18.4477153,24 18,23.5522847 18,23 C18,22.4477153 18.4477153,22 19,22 L23,22 L23,18 C23,17.4477153 23.4477153,17 24,17 Z" id="more-zoom"></path>
+            </g>
+        </g>
+    </g>
+</svg>

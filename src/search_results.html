@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include("./includes/head.html")
+    </head>
+    <body>
+        @@include("./includes/header_search.html")
+        <main class="p-0">
+            <div class="w-screen flex flex-col lg:items-center absolute mt-6">
+                <!--Mobile 1-->
+                <div class="bg-black-c shadow-search opacity-90 rounded flex justify-between lg:w-460px w-60 mb-2 ml-2">
+                    <div class="flex items-center">
+                        <img class="m-4" src="media/icon-search.svg">
+                        <span class="text-white text-lg">Búsqueda actual</span>
+                    </div>
+                    <img class="m-4 max-md:hidden" src="media/cross.svg">
+                </div>
+                <!--Mobile 2-->
+                <!-- <div class="flex justify-between lg:w-460px w-60 mb-2 ml-2">
+                    <button class="p-4 mr-4 bg-black-c rounded shadow"><img src="media/icon-search-white.svg"></button>
+                    <button class="btn-principal p-3 pt-2 pb-2">Buscar en esta zona</button>
+                </div> -->
+                <button class="btn-principal max-md:hidden">Buscar en esta zona</button>
+            </div>
+            <div class="w-screen flex justify-end absolute mt-6 lg:pr-16pc pr-2">
+                <div class="flex flex-col">
+                    <img class="p-4 bg-black-c rounded shadow mb-2" src="media/triangle.svg">
+                    <img class="max-md:hidden p-4 bg-black-c rounded border-b border-like-hover shadow" src="media/zoom.svg">
+                    <img class="max-md:hidden p-4 bg-black-c rounded shadow" src="media/zoom-out.svg">
+                </div>
+            </div>
+            <!--Placeholder-->
+            <img src="media/map3.jpg" class="w-screen max-md:hidden">
+            <img src="media/map3-mobile.jpg" class="w-screen lg:hidden">
+            <div class="flex flex-col items-center mt-14 mb-11">
+                <img src="media/resultados.svg" class="w-icon">
+                <h2 class="mt-2 mb-6 text-white">Lista de resultados</h2>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:pr-64 lg:pl-64 pr-2 pl-2 pb-28">
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-pink text-sm font-semibold">Categoría hc</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-orange text-sm font-semibold">1ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-l-orange text-sm font-semibold">2ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-pink text-sm font-semibold">Categoría hc</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-orange text-sm font-semibold">1ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-l-orange text-sm font-semibold">2ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-pink text-sm font-semibold">Categoría hc</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-orange text-sm font-semibold">1ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-grey-c mt-2.5 lg:mt-0 mb-5 p-3 card">
+                    <div class="flex flex-col">
+                        <h4 class="uppercase text-yellow-c text-sm font-semibold">3ª Categoría</h4>
+                        <h3 class="text-white text-2xl">Nombre del puerto</h3>
+                    </div>
+                    <img src="media/graph.jpg" class="mb-5">
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <!--image placeholder-->
+                            <img src="media/puertos-nuevos.svg">
+                            <p class="text-like ml-1">Nombre del autor</p>
+                        </div>
+                        <div class="flex items-center group">
+                            <button>
+                                <svg class="fill-current text-like group-hover:text-like-hover" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path  d="M10.936703,0.344394202 C11.3565985,0.0256767212 11.9010264,-0.0792070206 12.4092664,0.0607401744 C13.3103712,0.308865292 13.8397159,1.24050027 13.5915908,2.14160514 L13.5915908,2.14160514 L12.9839594,4.85125982 L16.332146,4.85125982 C17.0409781,4.85125982 17.7332635,5.06547684 18.3182161,5.46581851 C19.9208983,6.56269469 20.3309352,8.75111921 19.234059,10.3538015 L19.234059,10.3538015 L16.0638329,14.9859243 C15.6910234,15.5306487 15.0734489,15.8563432 14.4133644,15.8563432 L14.4133644,15.8563432 L7,15.8563432 C5.8954305,15.8563432 5,14.9609127 5,13.8563432 L5,13.8563432 L5,5.84398015 C5,5.21856895 5.29255699,4.62916431 5.79068893,4.25100597 L5.79068893,4.25100597 Z M2.92,4.85634316 C3.51646753,4.85634316 4,5.33987563 4,5.93634316 L4,5.93634316 L4,14.7763432 C4,15.3728107 3.51646753,15.8563432 2.92,15.8563432 L2.92,15.8563432 L1.08,15.8563432 C0.48353247,15.8563432 3.20474693e-14,15.3728107 3.19744231e-14,14.7763432 L3.19744231e-14,14.7763432 L3.19744231e-14,5.93634316 C3.19013769e-14,5.33987563 0.48353247,4.85634316 1.08,4.85634316 L1.08,4.85634316 Z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-like group-hover:text-like-hover font-semibold ml-1 text-sm">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include("./includes/footer.html")
+    </body>
+</html>
