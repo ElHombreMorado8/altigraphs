@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9A4F424B-74D8-4DA4-94D0-80CB3B5BFD5A</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-_-Assets" transform="translate(-730.000000, -315.000000)">
+            <g id="Fav-OFF" transform="translate(730.000000, 315.000000)">
+                <rect id="Bounds" x="0" y="0" width="48" height="48"></rect>
+                <circle id="Oval" fill="#2C2D32" cx="24" cy="24" r="20"></circle>
+                <path d="M24,19.6875 C23.2927778,17.84725 21.3115,16.5 19.25,16.5 C16.5657222,16.5 14.5,18.55275 14.5,21.28125 C14.5,25.0308125 18.5037222,27.930375 24,33.5 C29.4962778,27.930375 33.5,25.0308125 33.5,21.28125 C33.5,18.55275 31.4342778,16.5 28.75,16.5 C26.6863889,16.5 24.7072222,17.84725 24,19.6875 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

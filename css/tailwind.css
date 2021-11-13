@@ -6,6 +6,9 @@
     .card{
         @apply lg:m-0 lg:mr-4 lg:ml-4 rounded shadow-card;
     }
+    .minicard {
+        @apply flex flex-col items-center w-46rem lg:w-52 bg-grey-c p-01 pt-1 pb-2 lg:p-4 lg:pt-5 lg:pb-5 shadow-card;
+    }
     .btn-principal {
         @apply bg-pink hover:bg-btn-hover text-white p-10px pr-13px pl-13px rounded shadow text-lg;
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="34px" viewBox="0 0 37 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A29C5621-9B28-448C-94E8-E91B529DFB4B</title>
+    <defs>
+        <path d="M19.4122949,20 L22.2973895,25.0268399 C23.2457334,26.6794755 23.0612114,28.7512833 21.8344759,30.2085594 L21.8344759,30.2085594 L14.5471703,38.8689097 C13.8889149,39.6298143 13.1318189,39.8284005 12.2773443,39.8284005 L12.2773443,39.8284005 L8,39.8284005 L19.4122949,20 Z M25.583549,30.7223901 L30.8244435,39.8286058 L27.6033492,39.8286058 C24.3720198,39.8286058 22.3548516,36.3182952 23.9728556,33.5137426 L23.9728556,33.5137426 L25.583549,30.7223901 Z" id="path-1"></path>
+        <filter x="-45.8%" y="-55.5%" width="191.7%" height="200.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Altigraphs-symbol" transform="translate(-1.000000, -12.000000)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

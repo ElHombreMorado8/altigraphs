@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8EBB503F-699E-48E9-9266-A7C7D21024CF</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-_-Mi-perfil-_-Editar-perfil-_-Desktop-HD" transform="translate(-740.000000, -431.000000)">
+            <g id="Pop-Up" transform="translate(410.000000, 176.000000)">
+                <g id="edit-photo" transform="translate(332.000000, 257.000000)">
+                    <circle id="Oval" stroke="#212227" stroke-width="2" fill="#E7004C" cx="13" cy="13" r="14"></circle>
+                    <path d="M15.8875,18.13625 L19.25,19.25 L18.13625,15.8875 L11.71125,9.4625 L9.4625,11.71125 L15.8875,18.13625 Z M8.13875,10.3875 L10.3875,8.13875 L8.7325,6.48375 C8.11125,5.8625 7.105,5.8625 6.48375,6.48375 C5.8625,7.105 5.8625,8.11125 6.48375,8.7325 L8.13875,10.3875 L8.13875,10.3875 Z" id="icon_pencil-edit_alt" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

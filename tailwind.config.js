@@ -47,10 +47,12 @@ module.exports = {
         'h2': '2.6rem',
       },
       fontSize: {
+        '9px': '0.5625rem',
         '34px': '2.125rem',
       },
       width: {
         'icon': '2rem',
+        '46rem': '4.6rem',
         '30rem': '30rem',
         '60rem': '60rem',
       },
@@ -124,5 +126,6 @@ module.exports = {
   },
   plugins: [
     require('tailwind-caret-color')(),
+    require('@tailwindcss/line-clamp'),
   ],
 }

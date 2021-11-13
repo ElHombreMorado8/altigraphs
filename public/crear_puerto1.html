@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./css/tailwind.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <header class="flex justify-around p-3 bg-header-grey shadow-header items-center">
+    <img src="media/logo.svg" class="h-12 max-sm:h-8">
+    <div class="flex items-center">
+        <p class="text-white text-lg whitespace-nowrap mr-2 max-sm:hidden">User name</p>
+        <!--Image placeholder-->
+        <img src="media/puertos-nuevos.svg" class="h-12">
+    </div>
+</header>
+        <main class="p-0 mb-40">
+            <div class="bg-footer flex flex-col items-center p-9 lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc mb-12">
+                <h2 class="text-white lg:text-34px md:text-3xl text-2xl whitespace-nowrap">Crea un puerto, nombre</h2>
+                <img src="media/group.png" class="p-5 w-48">
+                <p class="text-white font-extralight text-center">Empieza poniéndole un nombre a tu altimetría, también puedes añadir una descripción para que tu altimetría sea más fácil de encontrar por la comunidad.</p>
+            </div>
+            <form class="flex flex-col items-stretch lg:pr-30pc lg:pl-30pc pr-10pc pl-10pc">
+                <label for="name" class="text-left text-like uppercase text-sm">Nombre*</label>
+                <input type="text" id="name" name="name" class="mb-7">
+                <label for="description" class="text-left text-like uppercase text-sm">Descripción</label>
+                <textarea id="description" name="description" rows="4" class="mb-20"></textarea>
+                <div class="flex justify-center">
+                    <button type="cancel" class="text-span hover:bg-black font-bold text-lg p-10px pr-13px pl-13px">Cancelar</button>
+                    <button type="submit" class="btn-principal font-bold ml-10">Siguiente</button>
+                </div>
+            </form>
+        </main>
+        <footer class="bg-dark-c flex flex-col">
+    <div class="pt-9 pl-12 pb-5 pr-12 bg-footer flex flex-col items-center">
+        <img src="media/logo-footer.svg" class="mb-8">
+        <span class="text-span text-base font-extralight">mail@mail.com</span>
+    </div>
+    <div class="flex max-md:flex-col items-center lg:justify-center mt-5 mb-5">
+        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Política de Privacidad</a>
+        <p class="footer-link max-md:hidden"> | </p>
+        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Aviso Legal</a>
+        <p class="footer-link max-md:hidden"> | </p>
+        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Política de Cookies</a>
+    </div>
+</footer>
+    </body>
+</html>
