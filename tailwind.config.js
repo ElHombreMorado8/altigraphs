@@ -1,5 +1,27 @@
 module.exports = {
-  purge: [],
+  purge: {
+    content: [
+    'src/crear_puerto1.html',
+    'src/crear_puerto2.html',
+    'src/edit_profile.html',
+    'src/inicio.html',
+    'src/login.html',
+    'src/mountain_port.html',
+    'src/profile.html',
+    'src/search_results.html',
+    'css/tailwind.css',
+    'src/includes/footer.html',
+    'src/includes/head.html',
+    'src/includes/header_port.html',
+    'src/includes/header_profile.html',
+    'src/includes/header_search.html',
+    'src/includes/header_user.html',
+    'src/includes/header.html',
+    ],
+    options: {
+      fontFace: true,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -33,6 +55,8 @@ module.exports = {
         '14px': '0.875rem',
         '94rem': '9.4rem',
         '30rem': '30rem',
+        '1pc': '1%',
+        '2pc': '2%',
         '5pc': '5%',
         '10pc': '10%',
         '15pc': '15%',
@@ -74,6 +98,9 @@ module.exports = {
   
         'max-sm': {'max': '767px'},
         // => @media (max-width: 767px) { ... }
+
+        'max-xs': {'max': '280px'},
+        // => @media (max-width: 280px) { ... }
   
         'sm': '576px',
         // => @media (min-width: 576px) { ... }
