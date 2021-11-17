@@ -16,7 +16,7 @@
     <button class="md:hidden flex items-center text-white font-semibold text-lg bg-black-c shadow p-10px pr-13px pl-13px"><img src="media/icon-search-white.svg" class="md:mr-2 text-white"></button>
     <div class="flex items-center max-sm:hidden">
         <button class="btn-principal mr-5"><a href=" " class="flex font-semibold"><img src="media/create.svg" class="mr-2">Crear puerto</a></button>
-        <button class="flex items-center text-white font-semibold text-lg bg-black-c shadow p-10px pr-13px pl-13px"><img src="media/icon-search-white.svg" class="md:mr-2 text-white">Buscador</button>
+        <button class="flex items-center text-white font-semibold text-lg bg-black-c hover:bg-footer shadow p-10px pr-13px pl-13px"><img src="media/icon-search-white.svg" class="md:mr-2 text-white">Buscador</button>
     </div>
 </header>
         <main class="p-0">
@@ -54,15 +54,15 @@
                         </div>
                     </div>
                     <div class="flex items-start pt-12">
-                        <button class="p-10px pr-6 pl-6 rounded text-like bg-black-c"><a href=" ">Editar perfil</a></button>
-                        <button class="p-10px pr-6 pl-6 ml-4 rounded text-like border border-header-grey"><a href=" ">Cerrar sesión</a></button>
+                        <button class="p-10px pr-6 pl-6 rounded text-like bg-black-c hover:bg-footer shadow"><a href=" ">Editar perfil</a></button>
+                        <button class="p-10px pr-6 pl-6 ml-4 rounded text-like border border-header-grey hover:bg-dark-c shadow"><a href=" ">Cerrar sesión</a></button>
                     </div>
                 </div>
                 <!--Mobile-->
                 <div class="flex flex-col p-9 pr-0 pl-0 md:hidden">
                     <div class="flex justify-between pr-2 pl-2">
-                        <button class="p-10px pr-3 pl-3 rounded text-like bg-black-c"><a href=" ">Editar perfil</a></button>
-                        <button class="p-10px pr-3 pl-3 ml-4 rounded text-like border border-header-grey"><a href=" ">Cerrar sesión</a></button>
+                        <button class="p-10px pr-3 pl-3 rounded text-like bg-black-c hover:bg-footer shadow"><a href=" ">Editar perfil</a></button>
+                        <button class="p-10px pr-3 pl-3 ml-4 rounded text-like border border-header-grey hover:bg-dark-c shadow"><a href=" ">Cerrar sesión</a></button>
                     </div>
                     <div class="flex flex-col items-center mb-6">
                         <img src="media/no-photo.svg">
@@ -296,8 +296,9 @@
                             <h3 class="text-white text-2xl">Nombre del puerto</h3>
                         </div>
                         <button class="group w-16 h-16">
+                            <!--Use class 'checked' when active-->
                             <svg class="relative z-10 w-16 h-16"><path id="Shape" fill="#fff" d="M24,19.69a5.21,5.21,0,0,0-4.75-3.19,4.67,4.67,0,0,0-4.75,4.78c0,3.75,4,6.65,9.5,12.22,5.5-5.57,9.5-8.47,9.5-12.22a4.67,4.67,0,0,0-4.75-4.78A5.21,5.21,0,0,0,24,19.69Z"/></svg>
-                            <svg class="relative -mt-16 w-16 h-16 text-grey-c fill-current transition-colors group-hover:text-like-hover group-hover:fill-current"><circle id="Oval" cx="24" cy="24" r="20"/></svg>
+                            <svg class="relative -mt-16 w-16 h-16 transition-colors group-hover:text-like-hover group-hover:fill-current checked"><circle id="Oval" cx="24" cy="24" r="20"/></svg>
                         </button>
                     </div>
                     <img src="media/graph.jpg" class="mb-5">
@@ -352,11 +353,11 @@
         <span class="text-span text-base font-extralight">mail@mail.com</span>
     </div>
     <div class="flex max-md:flex-col items-center lg:justify-center mt-5 mb-5">
-        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Política de Privacidad</a>
+        <a class="footer-link lg:mr-1 lg:ml-1 hover:text-pink" href=" ">Política de Privacidad</a>
         <p class="footer-link max-md:hidden"> | </p>
-        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Aviso Legal</a>
+        <a class="footer-link lg:mr-1 lg:ml-1 hover:text-pink" href=" ">Aviso Legal</a>
         <p class="footer-link max-md:hidden"> | </p>
-        <a class="footer-link lg:mr-1 lg:ml-1" href=" ">Política de Cookies</a>
+        <a class="footer-link lg:mr-1 lg:ml-1 hover:text-pink" href=" ">Política de Cookies</a>
     </div>
 </footer>
         </main>

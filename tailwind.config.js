@@ -48,6 +48,7 @@ module.exports = {
       spacing:  {
         '01': '0.1rem',
         '02': '0.2rem',
+        '5px': '0.3125rem',
         '9px': '0.5625rem',
         '10px': '0.625rem',
         '11px': '0.6875rem',
@@ -151,6 +152,7 @@ module.exports = {
       divideColor: ['group-hover'],
       borderWidth: ['active'],
       borderColor: ['active'],
+      boxShadow: ['active'],
     },
   },
   plugins: [

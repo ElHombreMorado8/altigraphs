@@ -12,6 +12,10 @@
     .btn-principal {
         @apply bg-pink hover:bg-btn-hover text-white p-10px pr-13px pl-13px rounded shadow text-lg;
     }
+    /* Use when active, also must remove the normal color */
+    .checked {
+        @apply text-pink fill-current;
+    }
     .header {
         @apply flex justify-between lg:justify-around pt-5 pb-5 pr-2 pl-2;
     }
