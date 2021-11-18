@@ -7,7 +7,7 @@
         @apply lg:m-0 lg:mr-4 lg:ml-4 rounded shadow-card;
     }
     .minicard {
-        @apply flex flex-col items-center bg-grey-c shadow-card p-1pc md:p-2pc md:pr-5pc md:pl-5pc;
+        @apply bg-grey-c shadow-card pt-1 pb-2 xl:pt-6 xl:pb-5;
     }
     .btn-principal {
         @apply bg-pink hover:bg-btn-hover text-white p-10px pr-13px pl-13px rounded shadow text-lg;

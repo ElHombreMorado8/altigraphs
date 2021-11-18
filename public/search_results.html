@@ -14,25 +14,23 @@
     <button class="btn-principal"><a href=" " class="font-semibold">Entra gratis</a></button>
 </header>
         <main class="p-0">
-            <div class="w-screen flex flex-col lg:items-center absolute mt-6">
+            <div class="w-screen flex flex-col md:items-center absolute mt-6">
                 <!--Mobile 1 and Desktop-->
-                <div class="bg-black-c shadow-search opacity-90 rounded flex justify-between lg:w-460px w-60 mb-2 ml-2 z-10 max-md:pr-7">
-                    <div class="flex items-center">
-                        <button class="hover:bg-footer"><img class="m-4" src="media/icon-search.svg"></button>
-                        <input type="text" placeholder="Búsqueda actual" class="text-white text-lg p-2 border-none bg-transparent shadow-none">
-                    </div>
-                    <button class="max-md:hidden hover:bg-footer"><img class="m-4" src="media/cross.svg"></button>
+                <div class="bg-black-c shadow-search opacity-90 rounded flex md:w-460px w-60 mb-2 ml-2 z-10">
+                    <button class="hover:bg-footer"><img class="m-4" src="media/icon-search.svg"></button>
+                    <input type="text" placeholder="Búsqueda actual" class="text-white text-lg p-2 w-full border-none bg-transparent shadow-none">
+                    <button class="max-sm:hidden hover:bg-footer flex justify-center items-center"><img class="m-4" src="media/cross.svg"></button>
                 </div>
                 <!--Mobile 2-->
-                <!-- <div class="flex justify-between lg:w-460px w-60 mb-2 ml-2 z-10">
+                <!-- <div class="flex justify-between md:w-460px w-60 mb-2 ml-2 z-10">
                     <button class="p-4 mr-4 bg-black-c rounded shadow"><img src="media/icon-search-white.svg"></button>
                     <button class="btn-principal p-3 pt-2 pb-2">Buscar en esta zona</button>
                 </div> -->
-                <button class="btn-principal max-md:hidden z-10">Buscar en esta zona</button>
+                <button class="btn-principal max-sm:hidden z-10">Buscar en esta zona</button>
             </div>
             <div class="w-screen flex justify-end absolute mt-6 lg:pr-16pc pr-2 z-0">
                 <div class="flex flex-col">
-                    <button class="p-4 bg-black-c hover:bg-footer rounded shadow mb-2"><img src="media/triangle.svg"></button>
+                    <button class="p-4 bg-black-c hover:bg-footer rounded shadow mb-2 flex justify-center"><img src="media/triangle.svg"></button>
                     <button class="max-md:hidden p-4 bg-black-c hover:bg-footer rounded border-b border-like-hover shadow"><img src="media/zoom.svg"></button>
                     <button class="max-md:hidden p-4 bg-black-c hover:bg-footer rounded shadow"><img class="pt-5px pb-5px" src="media/zoom-out.svg"></button>
                 </div>
