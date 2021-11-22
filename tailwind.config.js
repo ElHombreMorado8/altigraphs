@@ -1,5 +1,6 @@
 module.exports = {
   purge: {
+    enabled: true,
     content: [
     'src/crear_puerto1.html',
     'src/crear_puerto2.html',
